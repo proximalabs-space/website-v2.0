@@ -18,9 +18,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PlasmaTech | Software Development & Industrial Training",
+  title: "Proxima Labs | Software Development & Industrial Training",
   description:
     "AI Development, SaaS Solutions, Industrial Training and Skill Development Programs.",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
