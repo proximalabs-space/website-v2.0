@@ -5,7 +5,7 @@ import Testimonials from "./components/Testimonials";
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black text-white flex flex-col justify-center">
-      
+
       {/* Dynamic Background Shader */}
       <ShaderBackground />
 
@@ -13,7 +13,7 @@ export default function Home() {
       {/* HERO SECTION                                                              */}
       {/* ========================================================================= */}
       <section className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-32 pb-20 text-center flex flex-col items-center">
-        
+
         <div className="mb-6 flex items-center gap-3 text-sm font-medium text-gray-300">
           <div className="flex text-white tracking-widest text-lg select-none">
             ★★★★★
@@ -74,6 +74,115 @@ export default function Home() {
       </section>
 
       {/* ========================================================================= */}
+      {/* BENTO FEATURES GRID (DELYX LOOKALIKE - DARK SCHEME)                       */}
+      {/* ========================================================================= */}
+      <section className="relative w-full py-24 bg-black text-white border-t border-white/5">
+        <div className="mx-auto max-w-7xl px-6">
+            
+            <div className="max-w-xl mb-16">
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                    Engineered to Automate and Scale
+                </h2>
+                <p className="mt-4 text-sm text-gray-400 font-light leading-relaxed">
+                    Advanced infrastructures designed to keep your platform completely reliable, efficient, and operationally secure.
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                
+                {/* Box 1: Visual Media Feature */}
+                <div className="rounded-3xl bg-zinc-900/40 border border-white/5 p-8 flex flex-col justify-between min-h-[440px] transition hover:border-white/10 group">
+                    <div className="relative w-full h-[240px] rounded-2xl overflow-hidden bg-zinc-950 border border-white/5">
+                        <Image 
+                            src="/images/corporate.png" 
+                            alt="System Interface Preview" 
+                            fill
+                            className="object-cover opacity-80 group-hover:scale-102 transition duration-500"
+                        />
+                        <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-mono tracking-wider border border-white/5 uppercase text-gray-400">
+                            Live Environment
+                        </div>
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-medium text-white tracking-tight">AI-Powered Everything</h3>
+                        <p className="mt-2 text-sm text-gray-400 font-light leading-relaxed max-w-sm">
+                            From simple textual blueprints to pixel-perfect executions, our internal logic layers bring systems to life.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Box 2: Real-time Node Tracking Stream */}
+                <div className="rounded-3xl bg-zinc-900/40 border border-white/5 p-8 flex flex-col justify-between min-h-[440px] transition hover:border-white/10">
+                    <div className="w-full h-[240px] rounded-2xl bg-zinc-950/60 border border-white/5 flex items-center justify-center relative overflow-hidden px-4">
+                        <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent top-1/2 -translate-y-1/2" />
+                        <div className="flex items-center gap-3 relative z-10 overflow-x-auto no-scrollbar py-4">
+                            <div className="w-10 h-10 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 opacity-40 text-xs">＄</div>
+                            <div className="w-10 h-10 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 opacity-60 text-xs">👤</div>
+                            <div className="w-14 h-14 rounded-full bg-zinc-800 border-2 border-blue-500 flex items-center justify-center shrink-0 shadow-[0_0_30px_rgba(59,130,246,0.3)] relative">
+                                <div className="w-3 h-3 rounded-full bg-blue-400 animate-ping absolute" />
+                                <div className="w-6 h-6 rounded-full bg-blue-600/30 border border-blue-400 flex items-center justify-center" />
+                            </div>
+                            <div className="w-10 h-10 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 opacity-60 text-xs">⚙️</div>
+                            <div className="w-10 h-10 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 opacity-40 text-xs">📊</div>
+                        </div>
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-medium text-white tracking-tight">See Everything in Real Time</h3>
+                        <p className="mt-2 text-sm text-gray-400 font-light leading-relaxed max-w-sm">
+                            Turn streaming infrastructure metrics directly into structural telemetry and react the millisecond it matters.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Box 3: Smart Workflows / Wallet Card */}
+                <div className="rounded-3xl bg-zinc-900/40 border border-white/5 p-8 flex flex-col justify-between min-h-[440px] transition hover:border-white/10 text-left">
+                    <div className="w-full h-[240px] rounded-2xl bg-zinc-950/60 border border-white/5 flex flex-col items-center justify-center relative p-6">
+                        <div className="w-48 h-32 rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/10 shadow-2xl relative flex flex-col justify-between p-4 transform -rotate-2">
+                            <div className="w-8 h-6 rounded bg-zinc-700/50 border border-white/5" />
+                            <div className="flex justify-between items-center mt-4">
+                                <div className="w-16 h-2 rounded bg-zinc-700" />
+                                <div className="w-6 h-6 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-[8px]">✦</div>
+                            </div>
+                        </div>
+                        <button className="mt-6 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-gray-300 pointer-events-none backdrop-blur-md shadow-lg">
+                            Edit Workflow
+                        </button>
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-medium text-white tracking-tight">Smart Workflows</h3>
+                        <p className="mt-2 text-sm text-gray-400 font-light leading-relaxed max-w-sm">
+                            Build, configure, and seamlessly deploy optimized automated architectures tailored specifically to your scope.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Box 4: Seamless Status Integrations */}
+                <div className="rounded-3xl bg-zinc-900/40 border border-white/5 p-8 flex flex-col justify-between min-h-[440px] transition hover:border-white/10 text-left">
+                    <div className="w-full h-[240px] rounded-2xl bg-zinc-950/60 border border-white/5 flex items-center justify-center relative p-6">
+                        <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-lime-500/10 border border-lime-500/20 shadow-[0_0_40px_rgba(132,204,22,0.05)]">
+                            <div className="w-2 h-2 rounded-full bg-lime-400 relative">
+                                <div className="w-2 h-2 rounded-full bg-lime-400 animate-ping absolute" />
+                            </div>
+                            <span className="text-xs font-semibold text-lime-400 font-mono uppercase tracking-wider">
+                                All systems connected
+                            </span>
+                        </div>
+                        <div className="absolute top-12 left-12 w-1.5 h-1.5 rounded-full bg-zinc-800" />
+                        <div className="absolute bottom-12 right-12 w-1.5 h-1.5 rounded-full bg-zinc-800" />
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-medium text-white tracking-tight">Seamless Integrations</h3>
+                        <p className="mt-2 text-sm text-gray-400 font-light leading-relaxed max-w-sm">
+                            Unify your favorite microservices and operational nodes without wrestling with legacy pipeline complexity.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
       {/* CORE CAPABILITIES GRID (01)                                              */}
       {/* ========================================================================= */}
       <section className="relative w-full py-24 md:py-32 bg-black text-white border-t border-white/10 overflow-hidden">
@@ -97,7 +206,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-4xl font-normal leading-relaxed text-gray-300 tracking-tight">
               <strong className="font-semibold text-white">Software Development Company</strong>,
               delivering end-to-end technology solutions and architectures. We blend strategic engineering,
-              advanced AI systems, and expert-led <strong className="font-semibold text-white">Industrial Training</strong> to help 
+              advanced AI systems, and expert-led <strong className="font-semibold text-white">Industrial Training</strong> to help
               enterprises scale efficiently and shape the next generation of digital talent in an ever-
               <strong className="font-semibold text-white">changing world.</strong>
             </h2>
@@ -190,88 +299,71 @@ export default function Home() {
         </div>
       </section>
 
-     
-     
-
       {/* ========================================================================= */}
-      {/* UPDATED SECTION 2: INDUSTRIAL TRAINING ECOSYSTEM (STRATIV GRID LOOKALIKEM) */}
+      {/* INDUSTRIAL TRAINING ECOSYSTEM (STRATIV GRID LOOKALIKE - CLEAN LIGHT MODE) */}
       {/* ========================================================================= */}
       <section className="relative w-full py-24 bg-white text-black border-t border-gray-200">
         <div className="mx-auto w-full max-w-7xl px-6 text-center flex flex-col items-center">
-          
-          {/* Main Hero Header */}
+
           <h2 className="max-w-4xl text-5xl font-black tracking-tighter uppercase sm:text-7xl md:leading-[1.0] text-neutral-900">
             JOIN THE TEAMS SHAPING <br />
-            <span className="text-amber-400 block mt-1">TOMORROW'S STRATEGY</span>
+            <span className="text-amber-500 block mt-1">TOMORROW'S STRATEGY</span>
           </h2>
 
           <p className="mt-8 max-w-2xl text-base text-neutral-600 font-medium leading-relaxed">
             Across industries and time zones, fast-moving teams rely on our <span className="font-semibold text-neutral-900">Industrial Training Ecosystem</span> to turn uncertainty into structure, align technical core competencies, and move forward with precision.
           </p>
 
-          {/* Grid Layout Container */}
           <div className="mt-16 w-full grid grid-cols-2 md:grid-cols-6 border border-gray-200 bg-gray-50">
-            
-            {/* Box 1: Full-Stack */}
+
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <span className="font-bold text-lg tracking-tight text-neutral-900 uppercase">Full-Stack</span>
               <span className="text-[10px] font-mono tracking-widest text-neutral-400 mt-1 uppercase">Architecture</span>
             </div>
 
-            {/* Box 2: Next.js */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-neutral-100/50 border-r border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <span className="font-black text-xl tracking-tighter text-neutral-900">Next.js 15</span>
             </div>
 
-            {/* Box 3: Mobile Apps */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <span className="font-extrabold text-lg tracking-tight text-neutral-800">Flutter Labs</span>
             </div>
 
-            {/* Box 4: Applied AI */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <div className="flex items-center gap-1.5">
-                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                 <span className="font-bold text-lg tracking-tight text-neutral-900 uppercase">Applied AI</span>
               </div>
             </div>
 
-            {/* Box 5: Systems Design */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-neutral-100/50 border-r border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <span className="font-light text-xl tracking-wide text-neutral-900">System.design</span>
             </div>
 
-            {/* Box 6: Engineering */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-b border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-r-0">
               <span className="font-black text-lg text-neutral-900 italic tracking-tight">Quantum³</span>
             </div>
 
-            {/* Box 7: Cloud Infrastructure */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-b-0">
               <span className="font-bold text-sm tracking-[0.2em] text-neutral-500 uppercase">Cloud Native</span>
             </div>
 
-            {/* Box 8: Data Pipelines */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-neutral-100/50 border-r border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-b-0">
               <span className="font-bold text-base tracking-tight text-neutral-800">DataFlow.io</span>
             </div>
 
-            {/* Box 9: Industry Sprints */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-b-0">
               <span className="font-medium text-lg text-neutral-900 tracking-tight">⚡ SolarSprints</span>
             </div>
 
-            {/* Box 10: Mentorship */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white border-r border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-b-0">
               <span className="font-serif italic text-xl text-neutral-800">Direct.Mentorship</span>
             </div>
 
-            {/* Box 11: Production Vetted */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-neutral-100/50 border-r border-gray-200 min-h-[160px] hover:bg-neutral-50/50 transition duration-200 md:border-b-0">
               <span className="font-mono text-xs font-bold text-neutral-600 tracking-wider uppercase">Vetted_Talent</span>
             </div>
 
-            {/* Box 12: Placement Systems */}
             <div className="group relative flex flex-col items-center justify-center p-12 bg-white min-h-[160px] hover:bg-neutral-50/50 transition duration-200">
               <span className="font-semibold text-base text-neutral-900 tracking-tighter">Enterprise.Alumni</span>
             </div>
@@ -315,7 +407,7 @@ export default function Home() {
       <Testimonials />
 
       {/* ========================================================================= */}
-      {/* NEW SECTION 3: DOUBLE PERSUASION CONVERSION CALL-TO-ACTION (CTA)         */}
+      {/* DOUBLE PERSUASION CONVERSION CALL-TO-ACTION (CTA)                         */}
       {/* ========================================================================= */}
       <section className="relative w-full py-24 bg-black text-white border-t border-white/10">
         <div className="mx-auto max-w-5xl px-6 text-center">

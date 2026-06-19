@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -13,23 +14,20 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 z-50 w-full pt-6">
       <div className="mx-auto max-w-7xl px-6">
-        
+
         {/* Floating Capsule Bar */}
         <div className="flex w-full items-center justify-between rounded-2xl border border-white/10 bg-[#121212]/90 px-6 py-4 shadow-xl backdrop-blur-md">
-          
+
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-white">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="2" y="8" width="4" height="12" rx="1" />
-              <rect x="10" y="3" width="4" height="17" rx="1" />
-              <rect x="18" y="11" width="4" height="9" rx="1" />
-            </svg>
+          <Link href="/" className="flex items-center gap-3 text-white">
+            <Image
+              src="/logo.png"
+              alt="Proxima Labs Logo"
+              width={150}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
 
             <span className="text-xl font-bold tracking-tight">
               Proxima Labs
